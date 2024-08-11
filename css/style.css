@@ -1,0 +1,566 @@
+@font-face {
+    font-family: "Sofia Pro";
+    src: url("../fonts/Sofia_Pro_Regular.otf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  } 
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html {
+  height: 100%;
+	font-size: 100%; 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%; 
+    font-smooth: antialiased;
+	-webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+}
+/*Print Specific*/
+html, body {
+border: 1px solid white;
+height: 99%;
+page-break-after: avoid;
+page-break-before: avoid;
+}
+
+html, button, input, select, textarea { font-family: "Sofia Pro"; }
+body { 
+	min-height: 100%;
+	margin: 0; 
+	overflow-x: hidden;
+    font-family: "Sofia Pro";
+    font-size: 16px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+header { position: relative; }
+
+a, a:visited { }
+a:hover { text-decoration: underline; }
+a:active { }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: 700; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+p { color: #252625; margin: 4px 0; font-size: 16px; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ul, ol { margin: 0px; padding: 0 0 0 30px; font-size: 16px; color: #252625; }
+li {line-height: 1.5em;}
+dd { margin: 0; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { height: auto; border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+acronym { border-bottom: dotted 1px; cursor: help; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: default; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+.chromeframe { margin: 20px 0; background: #ccc; color: black; padding: 20px; }
+.show-print { display: none; }
+.off-screen, .off-page {
+    position: absolute; 
+    left: -999em; 
+    top: -35px;
+}
+/* Header styles */
+h1 {
+    color: #000000;
+    font-size: 1.7em;
+    line-height: 14px;
+    margin: 10px;
+}
+h1 span {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.7em;
+}
+h2 {
+    color: #625B70;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 5px;
+}
+
+h3 { 
+    color: #000000;
+    font-size: 1.5em;
+    line-height: 1.1em;
+    margin: 10px 0;
+}
+
+h4 {
+    color: #555555;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.55em;
+    margin: 4px 4px 0;
+}
+h5 {
+    color: #555555;
+    font-size: 1.4em;
+    margin: 5px 0 10px;
+}
+
+
+.boilerplate #main section, 
+.boilerplate #main .cardInfo,
+.boilerplate #main .mSaveBtn,
+.boilerplate #main .clearfix,
+.boilerplate #main #mBarCode,
+.boilerplate #main .gcmCopy,
+.boilerplate #main #trackImg,
+.boilerplate #main .gcmTerms,
+.boilerplate #footer-container .gcmFooter { margin: 0px 30px; }
+
+/* page width */
+.boilerplate #header-container #header-top, .boilerplate #header-container #header-bottom .header-content, .boilerplate #main, .boilerplate #footer-container {
+    width: 830px;
+}
+.boilerplate #main .howToRedeem span.remove-print, .boilerplate #header-container #header-bottom .header-content span.remove-print {
+    display: inline;
+}
+.boilerplate #main .howToRedeem span.show-print, .boilerplate #header-container #header-bottom .header-content span.show-print {
+    display: none;
+}
+.boilerplate #main {
+    background-color: #FFFFFF;
+    margin: 12px auto 0;
+}
+.top{
+    display: flex;
+    margin: 20px 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 20px;
+}
+
+.heading {
+    position: relative;
+    font-weight: 500;
+    color:#000000;
+    font-size: 32px;
+    font-family: "Sofia Pro";
+    margin-left: 30px;
+    width: 100%;
+}
+
+.heading h1{
+    font-size: 32px;
+    font-family: "Sofia Pro";
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.print {
+width: 10%;
+}
+.print img {
+    width: 22px;
+    margin: 5px;
+}
+
+.boilerplate #main .cardInfo {
+    margin: 0 auto 15px;
+    width: 100%;
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.boilerplate #main .cardInfo .content-container {
+    position: relative;
+    text-align: left;
+    display: block;
+    float: left;
+    clear: both;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+
+.boilerplate #main .cardInfo .content-container .showCard {
+    margin: 0;
+}
+.boilerplate #main .cardInfo .content-container .showCard img {
+    width: 95%;
+}
+
+
+.boilerplate #main .cardInfo .showCardInfo {
+    clear: both;
+    display: block;
+    float: none;
+    overflow: hidden;
+    position: relative;
+    width: 45%;
+}
+
+.boilerplate #main .cardInfo .showCardInfo #barCode {
+    clear: both;
+    margin: auto;
+    overflow: hidden !important;
+    padding: 0;
+    position: relative;
+    width: auto !important; 
+}
+.boilerplate #main .cardInfo .showCardInfo #barCode object {
+    width: auto;
+}
+.boilerplate #main .cardInfo .showCardInfo #barCode img {
+    max-width: none;
+    padding: 0;
+    width:95%;
+    height:69px;
+}
+
+.copy-card {
+    display: flex;
+    align-items: center;
+}
+.copy-button1 {
+ width:15%;
+}
+
+.copy-button1 button {
+    background: white;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333333;
+}
+
+.copy-button1 strong {
+    display: block;
+}
+.copy-button1 img {
+    display: block;
+    text-align: center;
+    height: 23px;
+    width: 23px;
+}
+.number #p1 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #625B70;
+    margin: 0px;
+}
+
+.number #p1 #cardNumber{
+    font-weight: 400;
+    font-size: 18px;
+    display: block;
+}
+
+.pin #p2 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #625B70;
+}
+.pin #p2 #pin{
+    font-weight: 400;
+    font-size: 18px;
+    display: block;
+}
+
+.dPrint-remove-print {
+    text-align: center;
+}
+.number {
+    width: 100%;
+}
+
+.pin {
+    width: 100%;
+    text-align: left;
+}
+.balance {
+    width: 100%;
+}
+.balance span {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.balance p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.copy-pin {
+    display: flex;
+    align-items: center;
+}
+
+.copy-button2 {
+width: 23%;
+}
+
+.copy-button2 button {
+    background: white;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333333;
+}
+
+.copy-button2 img {
+    display: block;
+    padding-left: 22px;
+    height: 23px;
+    width: 23px;
+}
+
+#box {
+    border-radius: 12px;
+    margin-left: 5%;
+    margin-right: 2%;
+    border: solid 10px #ebe9ed;
+    background-color: #ebe9ed;
+  }
+  
+  #box strong {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #625B70;
+  }
+  
+  #tofrom{
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #625B70;
+    margin-left: 5%;}
+    
+    #space{
+        padding-right: 35px;
+    }
+    #messageid{
+      font-family: 'Sofia Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      display: flex;
+      align-items: center;
+      color: #625B70;
+      margin-left: 5%;
+      display: block;
+    }
+
+    .message1 {
+        border-radius: 10px;
+        background-color: white;
+        padding: 15px 0;
+        margin-top: 10px;
+      }
+      
+      #message {
+        margin: 0 5px;
+        padding: 20px;
+      }
+
+      .mshowCardInfo , .mcopy-card , .mcopy-pin{
+        display: none;
+      }
+.colapse {
+    border-bottom: 1px solid #625B70;
+    margin: 0px 21px 0px 38px;
+    margin-bottom: 30px;
+}
+
+.redeem1 {
+    color: #625B70;
+    background-color: white;
+    cursor: pointer;
+    padding: 13px 0;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    display: inline-block;
+    border: none;
+    font-weight: 700;
+    padding-left:4px;
+}
+
+.redeem1:after {
+    content: '\002B';
+    font-weight: bold;
+    float: left;
+    padding-right: 10px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.baseline{
+    border-bottom: 1px solid #625B70;
+    margin: 20px 21px 0px 38px;
+}
+.content {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color:white;
+    margin-left: 5px;
+}
+
+.content p , ul , ol {
+    line-height: 1.5em;
+    color: #625B70;
+    font-size: 20px;
+    font-weight: 400;
+}
+.content #pad{
+    padding-bottom: 20px;
+}
+
+.footer{
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #ebe9ed;
+  }
+  .gcm-logo{
+    padding:15px 0px;
+    font-size: 15px;
+    color: #625B70;
+    }
+.footer img{
+    height:45px;
+    width: 46px;
+    margin-bottom: 30px;
+}
+  
+.hidden{
+    display: none;
+}
+  /*Animation Styling*/
+  .copy-card #snackbar {
+    visibility: hidden;
+    min-width: 50px;
+    margin-left: 0px;
+    background-image:url(../images/snackbar.png);
+    background-size:100% 100%;
+    color: #fff;
+    text-align: right;
+    padding: 15px;
+    position: fixed;
+    z-index: 1;
+    right: 26%;
+    top: 26.5%;
+  }
+
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 1s, fadeout 1.5s 2s;
+    animation: fadein 1s, fadeout 1.5s 2s;
+  }
+
+  @-webkit-keyframes fadein {
+    from { opacity: 0;}
+    to { opacity: 1;}
+    }
+    
+    @keyframes fadein {
+    from { opacity: 0;}
+    to { opacity: 1;}
+    }
+    
+    @-webkit-keyframes fadeout {
+    from { opacity: 1;}
+    to { opacity: 0;}
+    }  
+    
+    @keyframes fadeout {
+    from { opacity: 1;}
+    to { opacity: 0;}
+    }
+
+
+/* chrome specific */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+}
+
+/* ie specific */
+
+.boilerplate #main .cardInfo DIV#bhn_ubutton { display: block; }
+.lt-ie8 .boilerplate #main .cardInfo DIV#bhn_ubutton,
+.lt-ie9 .boilerplate #main .cardInfo DIV#bhn_ubutton { display: none; }
+
+.boilerplate #main .cardInfo DIV#ie_bhn_ubutton { display: none; }
+.lt-ie8 .boilerplate #main .cardInfo DIV#ie_bhn_ubutton,
+.lt-ie9 .boilerplate #main .cardInfo DIV#ie_bhn_ubutton { display: block; }
+ 
+/* =============================================================================
+  COMMON STYLES
+  ========================================================================== */
+.btn, a.btn, a.btn:hover, input.btn {
+  display: inline-block;
+  position: relative;
+  width: 162px;
+  padding: 12px 0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+  font: normal 14px Arial, Helvetica, sans-serif;
+  color: #333;
+  color: rgba(51, 51, 51, 0.8);
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.btn.signup, .btn.signup:hover { 
+  margin: 12px 0 0 0;
+  font: normal 1.33em "questrial", Arial, Helvetica, sans-serif; 
+}

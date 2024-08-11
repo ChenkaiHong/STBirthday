@@ -1,0 +1,56 @@
+/* BASIC REQUIREMENTS CSS */
+body #samsungsideTabs {
+
+    background-image: none;
+
+    background-color: transparent;
+
+    font-family:  Arial,Verdana,sans-serif;
+}
+
+/* SAMSUNG WALLET CSS */
+
+#samsungsideTabs {
+    position: fixed;
+    top: 55%;
+    right: 0;
+    z-index: 9999;
+}
+#samsungwalletsTab {
+    position: relative;
+    right: -3px;
+    z-index: 5000;
+    display: inline-block;
+    float: right;
+    clear: right;
+    /* max-width: 40px; */
+    vertical-align: bottom;
+    padding: 0;
+    background: none repeat scroll 0 0 #fff;
+    border: medium none;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #999;
+}
+#samsungwalletsTab span {
+    /* display: block;
+    margin: 0 0 5px 0; */
+}
+#samsungwalletsTab a {
+    /* display: block; */
+    margin: 0 0 5px 0;
+}
+#samsungwalletsTab span {
+    margin: 0px;
+    /* line-height: 0; */
+}
+
+#samsungwalletsTab .samsungwalletsRight { display: block; }
+
+#samsungwalletsTab .samsungwalletsTop { display: none; }
+
+.samsungwalletsRight {
+    float: right;
+    clear: both;
+    margin: 0;
+    border-top-left-radius: 4px;
+}

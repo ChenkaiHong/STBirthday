@@ -1,0 +1,446 @@
+/* Medium formats
+----------------------------------------------------------------------------------------*/
+@media all and (max-width: 830px) {
+    .boilerplate #main {
+        width: auto;
+        min-width: 280px;
+	}
+    .boilerplate #main .cardInfo .content-container .showCard {
+        width: 49%;
+    }
+
+    .boilerplate #main .cardInfo .content-container .showCard img{
+        width:auto;
+    }
+    
+    .boilerplate #main .howToRedeem #redeem .col1 {
+        width: 54%;
+    }
+    .boilerplate #main .howToRedeem #redeem .col2 {
+        width: 39%;
+    }
+    .boilerplate #main .cardInfo .showCardInfo .cardNum {
+        clear: both;
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
+    .boilerplate #main .cardInfo .showCardInfo .cardPin {
+        clear: both;
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
+    .boilerplate #main .cardInfo .showCardInfo .cardNum h3, .boilerplate #main .cardInfo .showCardInfo .cardPin h3 {
+        margin: 1px 0 10px;
+    }
+}
+
+
+/* Small formats
+----------------------------------------------------------------------------------------*/
+@media all and (max-width: 580px) {
+
+    .boilerplate #main .howToRedeem #redeem .col1 .dPrint {
+        display: none;
+    }
+    .boilerplate #header-container #header-top, .boilerplate #header-container #header-bottom .header-content, .boilerplate #main, .boilerplate #footer-container {
+        width: auto;
+        min-width: 280px;
+    }
+    .boilerplate #main .cardInfo,
+	.boilerplate #main .howToRedeem,
+	.boilerplate #main .terms { width: auto; }
+	.boilerplate #main {
+        margin: 0 auto;
+	}
+	#header-top { height: 60px; }
+    #header-top img#logo {
+        margin: 0;
+        width: 75px;
+    }
+
+    .boilerplate {
+        padding-top: 7px;
+    }
+    h1 { line-height: 1.2em; 
+    margin: 0px;}
+    h4 {
+        color: #333333;
+        margin: 4px 10px 0;
+    }
+    p {
+        color: #333333;
+    }
+
+    .boilerplate #main .cardInfo .showCardInfo .cardNum h3, .boilerplate #main .cardInfo .showCardInfo .cardPin h3 {
+        margin: 10px 15px;
+    }
+    .boilerplate #main .howToRedeem #redeem .col1 {
+        width: 48%;
+    }
+    .boilerplate #main .howToRedeem #redeem .col2 {
+        width: 48%;
+    }
+  
+    h2 {
+        font-size: 16px;
+        font-weight: 700;
+        padding-left: 10px;
+    }
+    
+	h1 { font-size: 1.8em; }
+	.boilerplate #main { 
+		margin-bottom: 0px;
+	}
+	.boilerplate #main p.ribbon { 
+		left: 0px; 
+		margin: 0em 0em 1em; 
+	}
+	
+
+    .boilerplate #main .cardInfo .content-container #showImage {
+        display: none;
+    }
+
+    .boilerplate #main .cardInfo .headingText {
+        margin: 0 auto 5px;
+    }
+
+    .heading{
+        width: 90%;
+        margin-left: 23px;
+    }
+    .heading h1{
+        font-size: 24px;
+        font-weight: 700;
+        width: 100%;
+    }
+    
+    .print{
+        width:10%;
+        margin-right: 4%;
+    }
+	/* card data */
+	.boilerplate #main .cardInfo { 
+		margin: 0 auto 15px;
+        width: 100%;
+        clear: both;
+        position: relative;
+        overflow: hidden;
+        display:block;
+    }
+	.boilerplate #main .cardInfo DIV { 
+		text-align: center;
+	}
+    .boilerplate #main .cardInfo DIV img {
+        background-color: #FFFFFF;
+        margin: 0 auto;
+    }
+	.boilerplate #main .cardInfo DIV a { 
+		margin: 0px auto 10px;
+		padding: 0px 5px; 
+	}
+	.barbal{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    .balance{
+        margin-bottom: 10px;
+    }
+    .balance span {
+        font-size: 48px;
+        font-weight: 500;
+    }
+
+.boilerplate #main .cardInfo .showCardInfo #barCode img {
+    height: 66px;
+    width: 258px;
+}
+    .boilerplate #main .cardInfo .content-container {
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .boilerplate #main .cardInfo .content-container .showCard {
+        margin: 0 auto 15px;
+        display: block;
+        clear: both;
+        overflow: hidden;
+        width: 326px;
+        -moz-border-radius: 12px;
+        -webkit-border-radius: 12px;
+        border: medium none;
+        border-radius: 12px;
+        float: none;
+    }
+    .boilerplate #main .cardInfo .content-container .showCard img {
+        padding: 0;
+        text-align: center;
+    }
+    
+
+.boilerplate #main .cardInfo .showCardInfo #barCode {
+    margin-bottom: 10px;
+}
+
+	.boilerplate #main .cardInfo .showCardInfo .cardNum, .boilerplate #main .cardInfo .showCardInfo .cardPin {
+        clear: both;
+        float: none;
+        text-align: center;
+    }
+
+	.boilerplate #main .cardInfo DIV.showCard img {
+		display: block; 
+		float: none; 
+		max-width: 95%;
+	}
+	
+    .boilerplate #main .cardInfo .showCardInfo {
+        margin: 0 auto 10px;
+        clear: both;
+        display: block;
+        float: left;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+
+    .copy-card , .copy-pin{
+        display: none;
+    }
+
+    #box{
+        margin:0 5%;
+        background-color:#EBE9ED ;
+        border: solid 10px #EBE9ED;
+    }
+    .message1 {
+        border-radius: 10px;
+        padding: 5px 0;
+        margin-top: 5px;
+    }
+
+    #box strong{
+      font-size: 16px;
+      font-weight: 700;
+    }
+    #tofrom{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    #space{
+        padding-right: 28px;
+    }
+    #messageid{
+        font-family: 'Sofia Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        color: #625B70;
+        margin-left: 5%;
+        display: block;
+      }
+    .mshowCardInfo{
+        display: block;
+        margin:20px 20px 0px;
+        border-top: 1px solid #625B70;
+    }
+    .mcopy-card {
+        display:flex;
+        margin-left: 20px;
+        margin-right: 20px;
+        align-items: center;
+    }
+    .mcopy-pin{
+        display:flex;
+        margin-left: 20px;
+        margin-right: 20px;
+        align-items: center;
+    }
+
+    .mcopy-card{
+        margin-top: 20px;
+    }
+
+    .number #p1 {
+        font-size: 16px;
+        font-weight: 800;
+    }
+    .pin #p2{
+        font-size: 16px;
+        font-weight: 800;
+    }
+    .number #p1 #mcardNumber{
+        font-size: 16px;
+        font-weight: 400;
+        display: block;
+    }
+    .pin #p2 #pin {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+.mcopy-button1 {
+        width:15%;
+       }
+       
+.mcopy-button1 button {
+           background: white;
+           border: none;
+           text-decoration: none;
+           font-size: 16px;
+           color: #333333;
+       }
+       
+.mcopy-button1 strong {
+           display: block;
+       }
+.mcopy-button1 img {
+           display: block;
+           text-align: center;
+           height: 23px;
+           width: 23px;
+       }
+
+.mcopy-button2 strong {
+    display: block;
+    }   
+
+ .mcopy-button2 {
+        width:15%;
+       }
+.mcopy-button2 button {
+    background: white;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333333;
+}
+
+.mcopy-button2 img {
+    display: block;
+    text-align: center;
+    height: 23px;
+    width: 23px;
+}
+
+.redeem1{
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.content p , ul, ol{
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+ul,ol{
+    color: #625B70;
+    padding-left: 30px;
+}
+.content{
+    margin-left: 0px;
+}
+
+.colapse {
+        margin: 0 20px;
+        margin-bottom: 30px;
+        border-bottom: 0px;
+    }
+.baseline{
+    margin:20px 20px 0px;
+}   
+.gcm-logo{
+    padding:10px 0px;
+    font-size: 10px;
+    }
+
+.footer img{
+    margin-bottom: 30px;
+}
+
+    /*Animation Stylying*/
+.mcopy-card #snackbar1 , .mcopy-pin #snackbar1{
+    visibility: hidden;
+    min-width: 50px;
+    margin-left: 0px;
+    background-image:url(../images/snackbar.png);
+    background-size:100% 100%;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    position: fixed;
+    z-index: 1;
+    left: 35%;
+    right: 26%;
+    font-size: 17px;
+    top: 70%;
+    height:1%;
+    width:20%;
+  }
+  
+  #snackbar1.show1 {
+    visibility: visible;
+    -webkit-animation: fadein 1s, fadeout 1.5s 2s;
+    animation: fadein 1s, fadeout 1.5s 2s;
+  }
+
+  @-webkit-keyframes fadein {
+    from { opacity: 0;}
+    to { opacity: 1;}
+    }
+    
+    @keyframes fadein {
+    from { opacity: 0;}
+    to { opacity: 1;}
+    }
+    
+    @-webkit-keyframes fadeout {
+    from { opacity: 1;}
+    to { opacity: 0;}
+    }  
+    
+    @keyframes fadeout {
+    from { opacity: 1;}
+    to { opacity: 0;}
+    }
+}
+	
+	
+	
+/* Small format (iPhone/Android)
+----------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 26em) {
+    .boilerplate #header-top #mPrint img#print-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .boilerplate #header-top #mPrint:after {
+        background: url("../images/print.png") no-repeat scroll 0 0 #BDAFA4;
+        content: "";
+        height: 36px;
+        left: 0;
+        margin: 0;
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        width: 38px;
+        z-index: 20;
+    }
+    
+    .boilerplate #main .cardInfo .content-container .showCard {
+        width: 93%;
+    }
+
+    
+    .boilerplate #main .cardInfo .showCardInfo #cardNumber2 { font-size: 0.9em; }
+}

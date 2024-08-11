@@ -1,0 +1,111 @@
+/* =============================================================================
+   Print Styles
+   ========================================================================== */
+
+body {
+    color: #000000;
+    background-color: #ffffff;
+    background-image: none;
+}
+
+.remove-print, .boilerplate #mPrint.remove-print { display: none; }
+.show-print { display: inherit; }
+a[href]:after { content: none !important; }
+ 
+a, a:visited { text-decoration: underline; }
+a[href]:after { content: " (" attr(href) ")"; }
+abbr[title]:after { content: " (" attr(title) ")"; }
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+thead { display: table-header-group; } 
+tr, img { page-break-inside: avoid; }
+/* img { max-width: 100% !important; } */
+@page { margin: 0.5cm; }
+p, h2, h3 { orphans: 3; widows: 3; }
+h2, h3 { page-break-after: avoid; }
+h4, h5 { line-height: 1.75em; }
+.boilerplate { background: #FFF; }
+
+.boilerplate #main p.ribbon, .lt-ie8 .boilerplate .main p.ribbon, .boilerplate #main p.ribbon_lt { background-color: #5E95C4; }
+.boilerplate #main p.ribbon .ribbon-content, .lt-ie8 .boilerplate .main p.ribbon .ribbon-content { color: #FFFFFF; }
+.boilerplate #main p.ribbon,
+.lt-ie8 .boilerplate .main p.ribbon { width: 90%; }
+.boilerplate #main p.ribbon .ribbon-content:before,
+.lt-ie8 .boilerplate .main p.ribbon .ribbon-content:before { border: none; }
+.lt-ie8 .boilerplate .main DIV.cardInfo { margin-top: -20px; }
+
+.lt-ie8 .boilerplate .main DIV.cardInfo img:first-child { margin-top: 10px; }
+.boilerplate #main .clearfix,
+.lt-ie8 .boilerplate .main DIV.clearfix { 
+    margin: 10px 0px 40px 365px; 
+    clear: none;
+}
+.boilerplate #main .gcmCopy, .lt-ie8 .boilerplate .main DIV.gcmCopy { padding-top: 0px; clear: both; }
+.boilerplate #main .gcmCopy p, .lt-ie8 .boilerplate .main DIV.gcmCopy p { margin-bottom: 10px; font-size: .9em; }
+.boilerplate #main .gcmFooter, .lt-ie8 .boilerplate .main DIV.gcmFooter { margin: 60px 30px 0px; }
+.boilerplate #main .gcmFooter p, .lt-ie8 .boilerplate .main DIV.gcmFooter p { 
+    display: inline; 
+    /* margin: 0px 0px 0px 30%; */
+}
+
+.boilerplate #main .howToRedeem span.remove-print, .boilerplate #header-container #header-bottom .header-content span.remove-print {
+    display: none;
+}
+
+
+.boilerplate #main .cardInfo .content-container #showImage {
+    opacity: 0.75;
+}
+
+.boilerplate #main .howToRedeem span.show-print, .boilerplate #header-container #header-bottom .header-content span.show-print {
+    display: inline;
+}
+
+.boilerplate #header-container p, .boilerplate #footer-container .gcmFooter span#GCMcopyright {
+    margin: 0 80px 0 0;
+}
+.boilerplate #main .cardInfo .showCard {
+    opacity: 0.7;
+}
+h3 { 
+    color: #000000;
+    margin: 5px 0;
+}
+h2 { 
+    font-size: 1.8em;
+}
+.boilerplate #main .cardInfo .showCardInfo .cardNum {
+    padding: 0;
+}
+.boilerplate #main .cardInfo .showCardInfo .cardNum {
+    background-color: #FFFFFF;
+}
+
+.boilerplate #footer-container .gcmFooter {
+    margin: 0 20px;
+}
+.boilerplate #main .cardInfo .showCard img, .lt-ie8 .boilerplate .main .cardInfo .showCard img {
+    max-width: 100%;
+}
+.boilerplate #footer-container .gcmFooter img#GCMlogo {
+    width: 66px;
+}
+.boilerplate #footer-container {
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.boilerplate #main {
+    margin: 12px auto 5px;
+}
+
+@media print {
+    .noPrint {
+        display:none;
+    }
+    .boilerplate #header-top #mPrint {
+        display:none;
+    }
+}
+p {color: #555555;margin: 4px 0;}
+

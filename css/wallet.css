@@ -1,0 +1,808 @@
+/* BASIC REQUIREMENTS CSS */
+body #sideTabs {
+
+    background-image: none;
+
+    background-color: transparent;
+
+    font-family:  Arial,Verdana,sans-serif;
+}
+
+/* WALLET CSS */
+
+#sideTabs {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    z-index: 9999;
+}
+#walletsTab {
+    position: relative;
+    right: -3px;
+    z-index: 5000;
+    display: inline-block;
+    float: right;
+    clear: right;
+    /* max-width: 40px; */
+    vertical-align: middle;
+    padding: 0;
+    background: none repeat scroll 0 0 #fff;
+    border: medium none;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #999;
+}
+#walletsTab span {
+    /* display: block;
+    margin: 0 0 5px 0; */
+}
+#walletsTab a {
+    /* display: block; */
+    margin: 0 0 5px 0;
+}
+#walletsTab span {
+    margin: 0px;
+    /* line-height: 0; */
+}
+
+#walletsTab .walletsRight { display: block; }
+
+#walletsTab .walletsTop { display: none; }
+
+.walletsRight {
+    float: right;
+    clear: both;
+    margin: 0;
+    background: none repeat scroll 0 0 #eeeeee;
+    border-top-left-radius: 4px;
+}
+
+.walletsRight .walletsClosed {
+
+    display: block;
+
+    padding: 0;
+
+    position: relative;
+
+    width: 40px;
+
+}
+.walletsRight .walletsClosed a {
+
+    color: #222;
+
+    font-size: 2em;
+
+    font-weight: bold;
+
+    margin: 0;
+
+    padding: 6px 17px 7px 16px;
+
+    text-decoration: none;
+
+    display: block;
+
+}
+.walletsRight .walletsClosed, .walletsRight .walletsOpen {
+
+    height: 38px;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+.walletsRight .walletsOpen p {
+
+    color: #222;
+
+    font-size: 12px; /* changing unit to px to be consistent across the board. */
+
+    font-weight: normal;
+
+    margin: 13px;
+
+    padding: 0;
+
+}
+.walletsRight .walletsOpen #closeWallet {
+
+    margin: 1px;
+
+    position: absolute;
+
+    right: 5px;
+
+    top: 4px;
+
+}
+.walletsMain {
+    float: right;
+
+    clear: both;
+
+    height: auto;
+
+    margin: 0;
+
+    position: relative;
+    /* background: none repeat scroll 0 0 #3183ef;
+       border-bottom-left-radius: 4px; */
+}
+.walletsMain .walletsClosed {
+
+    background: none repeat scroll 0 0 #3183ef;
+
+    border-bottom-left-radius: 4px;
+
+}
+.walletsMain .walletsOpen {
+
+    background: none repeat scroll 0 0 #ffffff;
+
+    border-bottom-left-radius: 4px;
+
+    margin: 9px 0 0;
+
+}
+.walletsMain .walletsClosed .verticalText {
+
+    bottom: 76px;
+
+    position: absolute;
+
+    right: -68px;
+
+    transform: rotate(90deg);
+
+    width: 176px;
+}
+.walletsMain .walletsClosed p {
+
+    color: #fff;
+
+    font-size: 14px;
+
+    margin: 0;
+
+    padding: 0;
+}
+.walletsMain .walletsClosed {
+
+    position: relative;
+
+    height: 183px;
+
+}
+.walletsMain .walletsOpen {
+
+    position: relative;
+
+    height: auto; /* 226px */
+
+}
+.walletsClosed { width: 40px; }
+
+.walletsOpen { width: 185px; }
+
+
+/* DEFAULT - TABS CLOSED
+
+.walletsRight .walletsClosed { display: block; }
+
+.walletsRight .walletsOpen { display: none; }
+
+.walletsMain .walletsClosed { display: block; }
+
+.walletsMain .walletsOpen { display: none; }
+
+ */
+
+
+/* DEFAULT - TABS OPEN*/
+
+.walletsRight .walletsClosed { display: none; }
+
+.walletsRight .walletsOpen { display: block; }
+
+.walletsMain .walletsClosed { display: none; }
+
+.walletsMain .walletsOpen { display: block; }
+
+
+
+/* BUTTONS */
+
+.walletsMain .walletsOpen #s2w-button {
+
+    padding-left: 8px !important;
+
+    margin: 4px 0 !important;
+
+}
+
+.stButton {
+
+    color: #000;
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    font-size: 11px;
+
+    line-height: 7px;
+
+    margin: 10px;
+
+    position: relative;
+
+    text-decoration: none;
+
+    z-index: 1;
+
+    /* border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px #999; */
+
+}
+.stButton .leftLogo {
+
+    display: inline-block;
+
+    height: 31px;
+
+    position: relative;
+
+    width: 33px;
+
+    background: #eeeeee no-repeat url(Save_to_Wallet_web2_buttonSprite.png) 0 0;
+
+}
+
+.stButton .rightLogo {
+
+    display: inline-block;
+
+    height: 31px;
+
+    position: relative;
+
+    width: 109px;
+
+    background: #3183ef no-repeat url(Save_to_Wallet_web2_buttonSprite.png) 0 0;
+
+}
+
+#stBtn_1 .leftLogo { background-position: -1px -2px; }
+
+#stBtn_1 .rightLogo { background-position: -37px -2px; }
+
+#stBtn_2 .leftLogo { background-position: 0 -37px; }
+
+#stBtn_2 .rightLogo { background-position: -38px -37px; }
+
+#stBtn_3 .leftLogo { background-position: -2px -77px; }
+
+#stBtn_3 .rightLogo { background-position: -37px -77px; }
+
+#stBtn_4 .leftLogo { background-position: -1px -114px; }
+
+#stBtn_4 .rightLogo { background-position: -37px -114px; }
+
+#stBtn_5 .leftLogo { background-position: 0 -148px; }
+
+#stBtn_5 .rightLogo { background-position: -38px -148px; }
+
+.walletsMain .walletsOpen div {
+
+    border: none;
+
+    border-radius: 3px;
+
+    display: block;
+
+    margin: 8px 8px 9px;
+
+    width: 92%;
+
+}
+
+#walletsTab a.stButton {
+
+    margin: 0;
+
+}
+
+.walletsMain .walletsOpen div .text {
+
+    display: none;
+
+}
+
+.walletsSuccess {
+
+    margin: auto;
+
+    width: 100%;
+
+    background: none repeat scroll 0 0 #7dc242;
+
+    height: 45px;
+
+    overflow: hidden;
+
+    text-align: left;
+
+    display: none;
+
+}
+
+#walletsTab .walletsSuccess img {
+
+    float: left;
+
+    height: 50px;
+
+    line-height: 45px;
+
+    margin: 0;
+
+    position: relative;
+
+    top: -3px;
+
+}
+
+#walletsTab .walletsSuccess p {
+
+    color: #fff;
+
+    display: block;
+
+    font-size: 1.6em;
+
+    line-height: 10px;
+
+    margin: 8px;
+
+    padding: 0;
+
+}
+
+#sideTabs .feedbackTab {
+
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 1);
+
+    border: 6px solid #3183ef;
+
+    border-radius: 5px;
+
+    box-shadow: 0 5px 5px #999;
+
+    clear: right;
+
+    display: inline-block;
+
+    float: right;
+
+    height: 92px;
+
+    max-width: 38px;
+
+    padding: 2px 2px 0 4px;
+
+    position: relative;
+
+    right: -12px;
+
+    top: 10px;
+
+    transition: all 0.2s ease-in-out 0s;
+
+    vertical-align: middle;
+
+    margin: 30px 0 0;
+
+}
+
+#sideTabs .feedbackTab p {
+
+    margin: 24px -30px 0;
+
+    padding: 16px 14px 12px;
+
+    transform: rotate(90deg);
+
+}
+
+#sideTabs .feedbackTab a {
+
+    color: #3183ef;
+
+    font-size: 1.4em;
+
+    text-decoration: none;
+
+}
+
+.feedbackTab a:hover {
+
+    text-decoration: underline;
+
+    cursor: pointer;
+
+}
+
+.feedbackTab .bounce {
+
+    /* animation: 30s ease 10s alternate none 1 bounce; */
+
+}
+div#head-container div#header {
+    margin-top: 43px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    /* Styles */
+    div#main {
+    }
+    div#smartbanner {
+        margin-top: 45px!important;
+    }
+    div#container {
+        margin-top:43px;
+    }
+    div#header-container header div#header {
+        margin-top: 43px;
+    }
+    div#header-container.remove-print + div#main {
+        margin-top: 38px;
+    }
+    /* */
+    div#main p.ribbon.ribbon_lt {
+        padding-top: 40px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+    /* Styles */
+    div#main {
+    }
+    div#smartbanner {
+        margin-top: 45px!important;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    /* Styles */
+    div#smartbanner {
+        margin-top: 0px!important;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    /* Styles */
+    div#smartbanner {
+        margin-top: 0px!important;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    /* Styles */
+    div#smartbanner {
+        margin-top: 44px!important;
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+
+    body { margin: 0; }
+
+    #main { margin-top: 45px; }
+
+
+    /* DEFAULT CLOSED */
+
+    .walletsRight .walletsClosed { display: block; }
+
+    .walletsRight .walletsOpen { display: none; }
+
+    .walletsMain .walletsClosed { display: block; }
+
+    .walletsMain .walletsOpen { display: none; }
+    .walletsTop .walletsOpen { display: none; }
+
+    #sideTabs {
+        right: auto;
+
+        top: 0;
+        width: 100%;
+    }
+    #sideTabs .feedbackTab {
+        display: none;
+    }
+    #walletsTab {
+        bottom: auto;
+        float: none;
+        clear: both;
+        text-align: center;
+        margin: auto;
+        right: 0 !important;
+        border-radius: 0;
+
+        box-shadow: none;
+
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+        display: block;
+
+    }
+
+    .walletsMain .walletsOpen div .text {
+
+        background: none repeat scroll 0 0 #3183ef;
+
+        /* border-bottom: 1px solid #2c70cc;
+
+        border-top: 1px solid #2c70cc; */
+
+        color: #fff;
+
+        display: inline-block;
+
+        height: 31px;
+
+        line-height: 36px;
+
+        padding: 0 0 0 6px;
+
+        vertical-align: middle;
+
+    }
+
+    .walletsMain .walletsClosed {
+
+        height: 0;
+
+    }
+
+    .walletsTop #walletPrint {
+
+        float: left;
+
+        height: 45px;
+
+        line-height: 45px;
+
+    }
+
+    .walletsTop #walletPrint img {
+
+        width: 39px;
+
+        vertical-align: middle;
+
+    }
+
+    .walletsTop #walletSave {
+
+        float: right;
+
+        height: 45px;
+
+        line-height: 45px;
+
+    }
+
+    .walletsTop #walletSave img {
+
+        width: 44px;
+
+        vertical-align: middle;
+
+    }
+
+    .walletsTop .walletsClosed {
+
+        background: none repeat scroll 0 0 #3183ef;
+
+        height: 45px;
+
+    }
+
+    .walletsTop a, .walletsTop a:link, .walletsTop a:visited {
+
+        font-size: 1.6em;
+
+        color: #fff;
+
+        text-decoration: none;
+
+    }
+
+    #walletsTab .walletsTop #walletPrint a {
+
+        display: block;
+
+        margin: 0;
+
+        padding: 0 20px 0 10px;
+
+    }
+
+    #walletsTab .walletsTop #walletSave a {
+
+        display: block;
+
+        margin: 0;
+
+        padding: 0 10px 0 20px;
+
+    }
+
+    .stButton .leftLogo, .stButton .rightLogo  {
+
+        vertical-align: middle;
+
+    }
+
+    #walletsTab .walletsRight {
+
+        display: none;
+
+    }
+
+    #walletsTab .walletsTop {
+
+        display: block;
+
+    }
+
+    .walletsMain .walletsOpen {
+
+        padding: 10px 0;
+
+        border-bottom-left-radius: 0;
+
+    }
+
+    .walletsTop .walletsOpen {
+
+        background: none repeat scroll 0 0 rgba(128, 128, 128, 0.7);
+
+        height: auto;
+
+    }
+
+    .walletsTop .walletsOpen img {
+
+        width: 46px;
+
+    }
+
+    .walletsClosed {
+
+        width: 100%;
+
+        height: 40px;
+
+        margin: auto;
+
+    }
+
+    .walletsOpen {
+
+        width: auto;
+
+        height: 170px;
+
+        margin: auto;
+
+    }
+
+    .walletsMain {
+
+        float: none;
+
+        margin: auto;
+
+    }
+
+    .walletsMain .walletsClosed p {
+
+        font-size: 14px;
+
+        font-weight: bold;
+
+    }
+
+    .walletsRight .walletsOpen, .walletsMain .walletsOpen {
+
+        background: none repeat scroll 0 0 rgba(128, 128, 128, 0.7);
+
+        margin: 0;
+
+    }
+
+    .walletsMain .walletsOpen div {
+
+        width: auto;
+
+        margin: 3px 13px 7px;
+
+    }
+
+    .stButton .rightLogo {
+
+        height: 31px;
+
+        width: 78px;
+
+    }
+
+    .walletsMain .walletsOpen div {
+
+        border: medium none;
+
+        margin: 3px 13px;
+
+    }
+
+    .walletsMain .walletsOpen #s2w-button {
+
+        margin: 0 auto !important;
+        width: 171px !important;
+        height: 31px !important;
+    }
+
+    #s2w-button iframe {
+
+        width: 171px !important;
+        height: 31px !important;
+    }
+
+    #stBtn_1 .rightLogo {
+
+        background-position: -44px -2px;
+
+    }
+
+    #stBtn_3 .rightLogo {
+
+        background-position: -44px -78px;
+
+    }
+
+    #stBtn_4 .rightLogo {
+
+        background-position: -43px -114px;
+
+    }
+
+}
+
+.googleWalletBtn{
+    border: none;
+    background: transparent;
+}
+.googleWalletImg{
+    height: 38px;
+}
